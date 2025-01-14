@@ -40,7 +40,7 @@ if ($hero_image || $hero_title || $hero_description || $hero_primary_button || $
   <section class="bg-top bg-cover md:block" style="background-image: url('<?php echo esc_url($hero_image); ?>');">
     <div class="container max-w-[1440px] max-xxl:px-8 mx-auto">
       <div class="py-28">
-        <div class="w-full lg:w-[612px] bg-[#0D783D] p-8">
+        <div class="w-full lg:w-[612px] bg-primary p-8">
           <?php if ($hero_title): ?>
             <<?php echo esc_html($hero_heading_tag); ?> class="text-2xl lg:text-4xl font-semibold text-white xl:<?php echo esc_attr($hero_font_size); ?> xl:<?php echo esc_attr($hero_line_height); ?>"
               <?php if ($hero_max_width): ?>

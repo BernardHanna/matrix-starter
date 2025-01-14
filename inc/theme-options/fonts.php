@@ -13,7 +13,7 @@ $fields
       'poppins'   => 'Poppins',
       'roboto'    => 'Roboto',
       'lato'      => 'Lato',
-      // Add more font options as needed
+    'kanit'      => 'Kanit',
     ],
     'default_value' => ['poppins'], // Default to enabling Poppins
     'layout'         => 'vertical',
