@@ -13,7 +13,7 @@ module.exports = {
       },
       colors: {
         primary: {
-          DEFAULT: '#FFFFFF',
+          DEFAULT: '#F16623',
           light: '#50B847',
           dark: '#00672F',
         },
@@ -44,13 +44,19 @@ module.exports = {
           yellow: '#FFFAE8',
           orange: '#FDCC05',
         },
+        // **Custom Text Colors**
+        text: {
+          primary: '#1A202C',
+          secondary: '#4A5568',
+          accent: '#F6AD55',  
+        },
       },
       fontSize: {
-        sm: '',
         base: '16px',
-        lg: '',
-        xl: '',
       },
+      width: {
+        'container' : '1440px',
+      },  
       maxWidth: {
         'xxs': '320px',
         'xs': '480px',
@@ -61,7 +67,16 @@ module.exports = {
         'xl': '1280px',
         'xxl': '1440px',
         'ultrawide': '1920px',
-      }
+      },
+      borderRadius: {
+        'custom': '0px',
+        'custom-sm': '4px',
+        'custom-md': '8px',
+        'custom-lg': '16px',
+        'custom-xl': '40px',
+        'custom-full': '100%',
+        'btn' : '0px',
+      },
     },
     pseudo: {
       'before': 'before',
