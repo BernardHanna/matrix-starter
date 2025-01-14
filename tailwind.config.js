@@ -13,19 +13,19 @@ module.exports = {
       },
       colors: {
         primary: {
-          DEFAULT: '#F16623',
-          light: '#50B847',
-          dark: '#00672F',
+          DEFAULT: '#fb6407',
+          light: '#ff8539',
+          dark: '#c54f06',
         },
         secondary: {
-          DEFAULT: '#F16623',
-          light: '#ECCEBF',
-          dark: '#C4D831',
+          DEFAULT: '#32325d',
+          light: '#1e1f3d',
+          dark: '#4e4f7e',
         },
         background: {
-          DEFAULT: '#F2F7F0',
+          DEFAULT: '#ffffff',
           light: '#EFF5EC',
-          dark: '#D0E2C8',
+          dark: '#000000',
         },
         accent: {
           greenLight: '#50B847',
@@ -44,7 +44,6 @@ module.exports = {
           yellow: '#FFFAE8',
           orange: '#FDCC05',
         },
-        // **Custom Text Colors**
         text: {
           primary: '#1A202C',
           secondary: '#4A5568',
@@ -58,6 +57,7 @@ module.exports = {
         'container' : '1440px',
       },  
       maxWidth: {
+        'container': '1440px',
         'xxs': '320px',
         'xs': '480px',
         'mob': '575px',
