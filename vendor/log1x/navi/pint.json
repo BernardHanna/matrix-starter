@@ -1,8 +1,0 @@
-{
-  "exclude": [
-    "examples/vanilla"
-  ],
-  "notName": [
-    "plugin.php"
-  ]
-}
