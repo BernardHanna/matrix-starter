@@ -57,6 +57,7 @@ module.exports = {
       },
       width: {
         'container-md': '1084px',
+        'container-lg': '1280px',
         'container': '1440px',
       },
       maxWidth: {
@@ -164,6 +165,7 @@ module.exports = {
     'container-md',
     'max-w-container',
     'max-w-container-md',
+    'max-w-container-lg',
     'max-w-xxs',
     'max-w-xs',
     'max-w-mob',

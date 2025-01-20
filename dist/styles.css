@@ -616,6 +616,12 @@ video {
 .-top-4 {
   top: -1rem;
 }
+.-top-8 {
+  top: -2rem;
+}
+.-top-\[1\.6rem\] {
+  top: -1.6rem;
+}
 .bottom-0 {
   bottom: 0px;
 }
@@ -631,8 +637,14 @@ video {
 .left-3 {
   left: 0.75rem;
 }
+.left-4 {
+  left: 1rem;
+}
 .left-7 {
   left: 1.75rem;
+}
+.left-\[-114px\] {
+  left: -114px;
 }
 .left-\[35\%\] {
   left: 35%;
@@ -663,6 +675,9 @@ video {
 }
 .top-\[-4px\] {
   top: -4px;
+}
+.z-0 {
+  z-index: 0;
 }
 .z-10 {
   z-index: 10;
@@ -870,6 +885,9 @@ video {
 .hidden {
   display: none;
 }
+.aspect-\[0\.9\] {
+  aspect-ratio: 0.9;
+}
 .aspect-\[1\.25\] {
   aspect-ratio: 1.25;
 }
@@ -916,6 +934,9 @@ video {
 .h-28 {
   height: 7rem;
 }
+.h-3 {
+  height: 0.75rem;
+}
 .h-40 {
   height: 10rem;
 }
@@ -952,8 +973,8 @@ video {
 .h-\[300px\] {
   height: 300px;
 }
-.h-\[304px\] {
-  height: 304px;
+.h-\[392px\] {
+  height: 392px;
 }
 .h-\[3px\] {
   height: 3px;
@@ -978,6 +999,9 @@ video {
 }
 .h-\[600px\] {
   height: 600px;
+}
+.h-\[66px\] {
+  height: 66px;
 }
 .h-\[6px\] {
   height: 6px;
@@ -1054,9 +1078,6 @@ video {
 .min-h-\[425px\] {
   min-height: 425px;
 }
-.min-h-\[4px\] {
-  min-height: 4px;
-}
 .min-h-\[500px\] {
   min-height: 500px;
 }
@@ -1126,6 +1147,9 @@ video {
 .w-28 {
   width: 7rem;
 }
+.w-3 {
+  width: 0.75rem;
+}
 .w-3\/12 {
   width: 25%;
 }
@@ -1174,9 +1198,6 @@ video {
 .w-7\/12 {
   width: 58.333333%;
 }
-.w-8 {
-  width: 2rem;
-}
 .w-8\/12 {
   width: 66.666667%;
 }
@@ -1191,6 +1212,9 @@ video {
 }
 .w-\[100\%\] {
   width: 100%;
+}
+.w-\[107px\] {
+  width: 107px;
 }
 .w-\[11\%\] {
   width: 11%;
@@ -1287,6 +1311,9 @@ video {
 }
 .w-\[36\%\] {
   width: 36%;
+}
+.w-\[360px\] {
+  width: 360px;
 }
 .w-\[37\%\] {
   width: 37%;
@@ -1545,6 +1572,9 @@ video {
 }
 .max-w-7xl {
   max-width: 80rem;
+}
+.max-w-\[1180px\] {
+  max-width: 1180px;
 }
 .max-w-\[252px\] {
   max-width: 252px;
@@ -2130,9 +2160,6 @@ video {
 .rounded-custom {
   border-radius: 0px;
 }
-.rounded-custom-lg {
-  border-radius: 16px;
-}
 .rounded-full {
   border-radius: 9999px;
 }
@@ -2432,10 +2459,6 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(255 246 241 / var(--tw-bg-opacity));
 }
-.bg-orange-400 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(251 146 60 / var(--tw-bg-opacity));
-}
 .bg-orange-500 {
   --tw-bg-opacity: 1;
   background-color: rgb(249 115 22 / var(--tw-bg-opacity));
@@ -2451,6 +2474,10 @@ video {
 .bg-red-700 {
   --tw-bg-opacity: 1;
   background-color: rgb(185 28 28 / var(--tw-bg-opacity));
+}
+.bg-secondary {
+  --tw-bg-opacity: 1;
+  background-color: rgb(30 31 61 / var(--tw-bg-opacity));
 }
 .bg-secondary-dark {
   --tw-bg-opacity: 1;
@@ -3141,6 +3168,9 @@ video {
 .pr-5 {
   padding-right: 1.25rem;
 }
+.pr-8 {
+  padding-right: 2rem;
+}
 .pt-10 {
   padding-top: 2.5rem;
 }
@@ -3152,6 +3182,9 @@ video {
 }
 .pt-2 {
   padding-top: 0.5rem;
+}
+.pt-24 {
+  padding-top: 6rem;
 }
 .pt-4 {
   padding-top: 1rem;
@@ -3373,6 +3406,10 @@ video {
   --tw-text-opacity: 1;
   color: rgb(37 99 235 / var(--tw-text-opacity));
 }
+.text-cyan-950 {
+  --tw-text-opacity: 1;
+  color: rgb(8 51 68 / var(--tw-text-opacity));
+}
 .text-gray-500 {
   --tw-text-opacity: 1;
   color: rgb(107 114 128 / var(--tw-text-opacity));
@@ -3415,6 +3452,10 @@ video {
 .text-red-600 {
   --tw-text-opacity: 1;
   color: rgb(220 38 38 / var(--tw-text-opacity));
+}
+.text-slate-800 {
+  --tw-text-opacity: 1;
+  color: rgb(30 41 59 / var(--tw-text-opacity));
 }
 .text-text-primary {
   --tw-text-opacity: 1;
@@ -3588,6 +3629,10 @@ video {
   --tw-text-opacity: 1;
   color: rgb(209 213 219 / var(--tw-text-opacity));
 }
+.hover\:text-gray-700:hover {
+  --tw-text-opacity: 1;
+  color: rgb(55 65 81 / var(--tw-text-opacity));
+}
 .hover\:text-white:hover {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -3734,11 +3779,6 @@ video {
   .max-md\:px-5 {
     padding-left: 1.25rem;
     padding-right: 1.25rem;
-  }
-
-  .max-md\:py-8 {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
   }
 
   .max-md\:pb-24 {
@@ -4710,10 +4750,6 @@ video {
 
   .sm\:h-9 {
     height: 2.25rem;
-  }
-
-  .sm\:h-\[434px\] {
-    height: 434px;
   }
 
   .sm\:min-h-\[470px\] {
@@ -6598,11 +6634,6 @@ video {
 
   .md\:w-auto {
     width: auto;
-  }
-
-  .md\:max-w-max {
-    max-width: -moz-max-content;
-    max-width: max-content;
   }
 
   .md\:grid-cols-2 {
@@ -11925,310 +11956,314 @@ video {
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: Poppins, sans-serif;
 }
 
 h1 {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  font-weight: 700;
 }
+
 h2 {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  font-weight: 600;
 }
+
 h3 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 500;
 }
+
 h4 {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 500;
 }
+
 h5 {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 500;
 }
+
 h6 {
+  font-size: 16px;
+  font-weight: 500;
 }
+
 ul {
+  list-style-position: inside;
+  list-style-type: disc;
 }
+
 ol {
+  list-style-position: inside;
+  list-style-type: decimal;
 }
+
 li {
+  margin-bottom: 0.5rem;
+  list-style: none;
 }
 
 /* Links */
 a {
+  --tw-text-opacity: 1;
+  color: rgb(59 130 246 / var(--tw-text-opacity));
+  text-decoration-line: underline;
+}
+a:hover {
+  --tw-text-opacity: 1;
+  color: rgb(29 78 216 / var(--tw-text-opacity));
 }
 
 /* Forms */
 input {
+  border-radius: 0.5rem;
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(209 213 219 / var(--tw-border-opacity));
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
-textarea {
-}
-select {
-}
-button {
+input:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgb(59 130 246 / var(--tw-ring-opacity));
 }
 
-.entry-content img {
-  margin: 0 0 1.5em 0;
+textarea {
+  border-radius: 0.5rem;
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(209 213 219 / var(--tw-border-opacity));
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
+
+textarea:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgb(59 130 246 / var(--tw-ring-opacity));
+}
+
+select {
+  border-radius: 0.5rem;
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(209 213 219 / var(--tw-border-opacity));
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+select:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgb(59 130 246 / var(--tw-ring-opacity));
+}
+
+button {
+  border-radius: 0.5rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(59 130 246 / var(--tw-bg-opacity));
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+button:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(29 78 216 / var(--tw-bg-opacity));
+}
+
+/* Image Styling */
+.entry-content img {
+  margin-bottom: 1.5rem;
+}
+
 .alignleft,
 img.alignleft {
-  margin-right: 1.5em;
-  display: inline;
   float: left;
+  margin-right: 1.5rem;
+  display: inline;
 }
+
 .alignright,
 img.alignright {
-  margin-left: 1.5em;
-  display: inline;
   float: right;
+  margin-left: 1.5rem;
+  display: inline;
 }
+
 .aligncenter,
 img.aligncenter {
-  margin-right: auto;
-  margin-left: auto;
-  display: block;
   clear: both;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
   height: auto;
   width: 100%;
 }
+
 .alignnone,
 img.alignnone {
-  /* not sure about this one */
+  display: block; /* Update based on desired behavior */
 }
+
 .wp-caption {
-  margin-bottom: 1.5em;
+  margin-bottom: 1.5rem;
+  padding-top: 0.25rem;
   text-align: center;
-  padding-top: 5px;
 }
+
 .wp-caption img {
-  border: 0 none;
-  padding: 0;
-  margin: 0;
+  margin: 0px;
+  border-width: 0px;
+  padding: 0px;
 }
+
 .wp-caption p.wp-caption-text {
-  line-height: 1.5;
-  font-size: 10px;
-  margin: 0;
+  margin: 0px;
+  font-size: 0.75rem;
+  line-height: 1.5rem;
 }
+
 .wp-smiley {
-  margin: 0 !important;
-  max-height: 1em;
+ display: none;
 }
+
 blockquote.left {
-  margin-right: 20px;
-  text-align: right;
-  margin-left: 0;
-  width: 33%;
   float: left;
+  margin-left: 0px;
+  margin-right: 1.25rem;
+  width: 33.333333%;
+  text-align: right;
 }
+
 blockquote.right {
-  margin-left: 20px;
-  text-align: left;
-  margin-right: 0;
-  width: 33%;
   float: right;
+  margin-left: 1.25rem;
+  margin-right: 0px;
+  width: 33.333333%;
+  text-align: left;
 }
 
-table.grants tr:first-child td {
-  background-color: #0d783d;
-  color: #fff;
+
+/* Tailwind classes for Slick's structure */
+.slick-slider {
+  position: relative;
+  display: flex;
 }
 
-table.grants tr:nth-child(odd) td {
-  background-color: #f6f6f6;
-}
-.thm-unit-test table tbody tr td {
-  border: 1px solid #ddd;
-  line-height: 1.42857;
-  padding: 8px;
-  vertical-align: top;
+.slick-initialized .slick-slide {
+  position: relative;
+  display: flex;
 }
 
-html {
-  width: 100%;
-  /*max-width: 1728px; */
-  margin: auto;
+.slick-list {
+  overflow: visible !important; /* Allows elements outside the slider's bounds to be visible */
 }
 
-.fixed-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 9999;
-  background-color: white;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  animation: bounceDown 0.6s ease;
+.slick-track {
+  position: relative;
+  display: flex;
+  gap: 1rem; /* Adjust the gap between slides */
 }
 
-@keyframes bounceDown {
-  0% {
-    transform: translateY(-100%);
-  }
-  60% {
-    transform: translateY(10px);
-  }
-  80% {
-    transform: translateY(-5px);
-  }
-  100% {
-    transform: translateY(0);
-  }
+.slick-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Ensure content stays centered */
+  outline: none; /* Remove unwanted focus outlines */
 }
 
-.current-menu-item {
-  border-bottom: 2px solid #f16623;
+.slick-prev,
+.slick-next {
+  position: absolute;
+  top: 50%;
+  --tw-translate-y: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  border-radius: 9999px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(107 114 128 / var(--tw-text-opacity));
+  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-.children .current-menu-item {
-  border-bottom: none !important;
-  background: #fffae8;
+.slick-prev:hover,
+.slick-next:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(243 244 246 / var(--tw-bg-opacity));
 }
 
-/* Calendly badge widget default styles */
-.calendly-badge-widget {
-  position: fixed !important;
-  right: 0 !important;
-  top: 40% !important;
-  z-index: 1000;
-  background-color: #f16623 !important;
-  color: #ffffff !important;
-  width: 80px;
-  height: 250px;
+.slick-prev,
+.slick-next {
+  z-index: 10;
+}
+
+.slick-prev {
+  left: 1rem;
+}
+
+.slick-next {
+  right: 1rem;
+}
+
+.slick-dots {
+  margin-top: 1rem;
   display: flex;
   justify-content: center;
-  align-items: center;
-  text-align: center;
-  font-family: "Poppins", sans-serif !important;
-  font-size: 16px !important;
-  font-weight: 600 !important;
-  line-height: normal;
-  text-transform: uppercase !important;
-  border-radius: 0px !important;
-  cursor: pointer;
-  transition: background-color 0.3s;
 }
 
-.calendly-badge-widget .calendly-badge-content {
-  padding: 1.3rem !important;
+.slick-dots > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(0.5rem * var(--tw-space-x-reverse));
+  margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
-/* Flip the text within the button for larger screens */
-.calendly-badge-content {
-  display: flex !important;
-  justify-content: center;
-  align-items: center;
-  height: 80px !important;
-  width: 100%;
-  transform: rotate(270deg); /* Flipping the text */
-  font-family: Poppins !important;
-  font-size: 16px !important;
-  font-style: normal;
-  font-weight: 600 !important;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  white-space: nowrap;
-  box-shadow: none !important;
-  position: relative; /* To position the SVG */
-  border-radius: 0px !important;
+.slick-dots li button {
+  height: 0.75rem;
+  width: 0.75rem;
+  border-radius: 9999px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(209 213 219 / var(--tw-bg-opacity));
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
 }
 
-/* Hover styles
-        .calendly-badge-widget:hover {
-            background-color: #0D783D !important;
-        } */
-
-/* Hide the default Calendly branding if branding is undefined */
-.calendly-badge-widget .calendly-badge-powered-by {
-  display: none;
+.slick-dots li.slick-active button {
+  --tw-bg-opacity: 1;
+  background-color: rgb(59 130 246 / var(--tw-bg-opacity)); /* Active state color */
 }
 
-/* Full-screen Calendly iframe adjustment */
-.calendly-overlay iframe {
-  width: 100%;
-  height: 100vh !important;
+.slick-dots li {
+  list-style: none;
 }
-
-.calendly-overlay .calendly-popup .calendly-popup-content {
-  height: 100vh !important;
-}
-
-/* Styles for Custom SVG */
-.calendly-badge-svg {
-  display: none; /* Hidden by default */
-  position: absolute;
-  width: 60px;
-  height: 60px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  pointer-events: none; /* Allow clicks to pass through to the badge */
-}
-
-.calendly-badge-widget .calendly-badge-content span {
-  display: block;
-  font-family: Poppins;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-  text-transform: uppercase;
-}
-
-/* Responsive Styles for Smaller Screens */
-@media (max-width: 768px) {
-  .calendly-badge-content {
-    border-radius: 50% !important;
-  }
-  .calendly-badge-widget {
-    right: 20px !important;
-    bottom: 20px !important;
-    top: auto !important;
-    width: 80px !important;
-    height: 80px !important;
-    border-radius: 50% !important;
-    flex-direction: row !important;
-    justify-content: center !important;
-    padding: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) !important;
-    margin: auto;
-    background-color: #f16623 !important;
-  }
-
-  /* Hide the Calendly badge text */
-  .badge-text {
-    display: none !important;
-  }
-
-  /* Show the SVG */
-  .calendly-badge-svg {
-    display: block !important;
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    transform: rotateX(145deg);
-    pointer-events: none;
-    top: unset;
-    left: 0;
-    right: 0;
-  }
-  .calendly-badge-widget .calendly-badge-content {
-    border-radius: 100% !important;
-  }
-}
-
-.calendly-badge-widget {
-  visibility: hidden; /* Ensure it's not visible initially */
-  opacity: 0;
-  transform: translateY(100%);
-  transition: transform 0.5s ease, opacity 0.5s ease;
-}
-
-/* When ready to show, apply the slide-up effect */
-.calendly-badge-widget.slide-up {
-  visibility: visible; /* Make it visible when it slides up */
-  opacity: 1;
-  transform: translateY(0);
-}
-
-/* Ensure the desktop version doesn’t flash on mobile by keeping the badge off-screen until it’s loaded */
-@media (max-width: 768px) {
-  .calendly-badge-widget.hidden-offscreen {
-    visibility: hidden; /* Hide until fully loaded */
-  }
-}
-

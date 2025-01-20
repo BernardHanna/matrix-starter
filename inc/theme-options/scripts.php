@@ -13,12 +13,19 @@ $fields
     'label'        => 'Enable Scripts and Styles',
     'instructions' => 'Select the scripts and styles you want to enable.',
     'choices'      => [
-      'font_awesome' => 'Font Awesome',
-      'flowbite'     => 'Flowbite',
-      'slick'     => 'Slick JS',
-      'hamburger_css' => 'Hamburgers CSS'
+    'font_awesome' => 'Font Awesome',
+    'flowbite'     => 'Flowbite',
+    'slick'     => 'Slick JS',
+    'hamburger_css' => 'Hamburgers CSS',
+    //'headhesive'   => 'Headhesive',
     ],
-    'default_value' => ['font_awesome', 'flowbite', 'hamburger_css'], // Default to enabled
+  'default_value' => [
+    //'headhesive', 
+    'slick',
+    'font_awesome',
+    'flowbite',
+    'hamburger_css'
+  ], // Default to enabled
     'layout'         => 'vertical',
   ])
   ->addAccordion('scripts_settings_end')->endpoint();

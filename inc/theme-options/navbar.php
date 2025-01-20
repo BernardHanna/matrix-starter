@@ -8,6 +8,12 @@ $navigationFields
   ->addGroup('navigation_settings_start', [
     'label' => 'Navigation Settings',
   ])
+  ->addTrueFalse('sticky_menu', [
+    'label'        => 'Enable Sticky Menu',
+    'instructions' => 'Toggle to make the mobile menu sticky at the top of the screen.',
+    'ui'           => 1,
+    'default_value' => 0, // Disabled by default
+  ])
   ->addRadio('navigation_style', [
     'label'        => 'Navigation Style',
     'instructions' => 'Choose the style of navigation to use.',

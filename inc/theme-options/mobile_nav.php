@@ -61,6 +61,60 @@ $fields
         ]
       ]
     ],
+  ])
+  ->addSelect('mobile_menu_effect', [
+    'label'        => 'Mobile Menu Open Effect',
+    'instructions' => 'Choose the animation effect for the mobile menu.',
+    'choices'      => [
+      'slide_up'    => 'Slide Up',
+      'slide_left'  => 'Slide In from Left',
+      'slide_right' => 'Slide In from Right',
+      'fullscreen'  => 'Full Screen',
+    ],
+    'default_value' => 'slide_up',
+    'layout'        => 'vertical',
+    'conditional_logic' => [
+      [
+        [
+          'field' => 'enable_hamburger',
+          'operator' => '==',
+          'value' => '1',
+        ]
+      ]
+    ],
+  ])
+  ->addNumber('mobile_menu_width', [
+    'label'       => 'Mobile Menu Width (%)',
+    'instructions' => 'Enter width as a percentage (e.g., 80 for 80%).',
+    'default_value' => 100,
+    'append'        => '%',
+    'conditional_logic' => [
+      [
+        [
+          'field' => 'mobile_menu_effect',
+          'operator' => '!=',
+          'value' => 'fullscreen',
+        ],
+        [
+          'field' => 'enable_hamburger',
+          'operator' => '==',
+          'value' => '1',
+        ]
+      ],
+    ],
+  ])
+  ->addColorPicker('mobile_menu_background', [
+    'label'       => 'Mobile Menu Background Color',
+    'default_value' => '#FFFFFF',
+    'conditional_logic' => [
+      [
+        [
+          'field' => 'enable_hamburger',
+          'operator' => '==',
+          'value' => '1',
+        ]
+      ]
+    ],
   ]);
 
 return $fields;
