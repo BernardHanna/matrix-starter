@@ -1,0 +1,393 @@
+<?php
+    ->addLayout('contact_001', [
+      'label' => 'Contact 01',
+    ])
+    ->addSelect('heading_tag', [
+      'label' => 'Heading Tag',
+      'choices' => [
+        'h1' => 'H1',
+        'h2' => 'H2',
+        'h3' => 'H3',
+        'h4' => 'H4',
+        'h5' => 'H5',
+        'h6' => 'H6',
+      ],
+      'default_value' => 'h2',
+    ])
+    ->addText('heading_text', [
+      'label' => 'Heading Text',
+      'default_value' => 'Do you have any further questions? Send us a message',
+    ])
+    ->addColorPicker('section_bg_color', [
+      'label' => 'Section Background Color',
+      'default_value' => '#E5E7EB', // Neutral background color by default
+    ])
+    ->addWysiwyg('form_iframe', [
+      'label' => 'Form Short Code',
+      'instructions' => 'Insert the Short Code for the form',
+    ])
+    ->addLayout('contact_002', [
+      'label' => 'Contact 02',
+    ])
+    ->addSelect('heading_tag', [
+      'label' => 'Heading Tag',
+      'choices' => [
+        'h1' => 'H1',
+        'h2' => 'H2',
+        'h3' => 'H3',
+        'h4' => 'H4',
+        'h5' => 'H5',
+        'h6' => 'H6',
+      ],
+      'default_value' => 'h2',
+    ])
+    ->addText('heading_text', [
+      'label' => 'Heading Text',
+      'default_value' => 'Contact 001',
+    ])
+    ->addWysiwyg('contact_description', [
+      'label' => 'Contact Description',
+      'default_value' => "It's easy to get in touch! Contact us and our Home Energy experts will be in touch to discuss your project with you.",
+    ])
+    ->addRepeater('contact_info', [
+      'label' => 'Contact Information',
+      'layout' => 'block',
+    ])
+    ->addText('contact_title', [
+      'label' => 'Contact Title',
+      'default_value' => 'Head Office',
+    ])
+    ->addWysiwyg('contact_details', [
+      'label' => 'Contact Details',
+    ])
+    ->endRepeater()
+    ->addColorPicker('section_bg_color', [
+      'label' => 'Section Background Color',
+      'default_value' => '#F3F4F6', // Neutral background color by default
+    ])
+    ->addWysiwyg('iframe_code', [
+      'label' => 'Iframe Code',
+      'instructions' => 'Insert the iframe code for the map or any other content.',
+    ])
+
+    ->addLayout('info_hub', [
+      'label' => 'Info Hub',
+    ])
+    ->addRepeater('info_hub_items', [
+      'label' => 'Info Hub Items',
+      'layout' => 'block',
+    ])
+    ->addImage('item_image', [
+      'label' => 'Item Image',
+      'return_format' => 'id',
+    ])
+    ->addText('item_title', [
+      'label' => 'Item Title',
+    ])
+    ->addWysiwyg('item_description', [
+      'label' => 'Item Description',
+      'rows' => 4,
+    ])
+    ->addColorPicker('item_bg_color', [
+      'label' => 'Item Background Color',
+      'default_value' => '#F3F4F6', // Neutral background color by default
+    ])
+    ->addPageLink('item_link', [
+      'label' => 'Link to Page/Post',
+      'post_type' => ['page', 'post'],
+      'return_format' => 'url',
+    ])
+    ->endRepeater()
+    ->addColorPicker('section_bg_color', [
+      'label' => 'Section Background Color',
+      'default_value' => '#FFFFFF', // Default white background
+    ])
+    ->addLayout('table_001', [
+      'label' => 'Tables',
+    ])
+    ->addSelect('heading_tag', [
+      'label' => 'Heading Tag',
+      'choices' => [
+        'h1' => 'H1',
+        'h2' => 'H2',
+        'h3' => 'H3',
+        'h4' => 'H4',
+        'h5' => 'H5',
+        'h6' => 'H6',
+      ],
+      'default_value' => 'h2',
+    ])
+    ->addText('heading_text', [
+      'label' => 'Heading Text',
+      'default_value' => 'Table Heading', // Default text for the heading
+    ])
+    ->addRepeater('tables', [
+      'label' => 'Tables',
+      'min' => 1,
+      'layout' => 'block',
+    ])
+    ->addRepeater('table_rows', [
+      'label' => 'Table Rows',
+      'layout' => 'block',
+    ])
+    ->addText('type_of_home', [
+      'label' => 'Column One',
+    ])
+    ->addText('grant_value', [
+      'label' => 'Column Two',
+    ])
+    ->addText('grant_name', [
+      'label' => 'Column three',
+    ])
+    ->endRepeater()
+    ->addLayout('services_006', [
+      'label' => 'Why Choose Us 01',
+    ])
+    ->addSelect('heading_tag', [
+      'label' => 'Heading Tag',
+      'choices' => [
+        'h1' => 'H1',
+        'h2' => 'H2',
+        'h3' => 'H3',
+        'h4' => 'H4',
+        'h5' => 'H5',
+        'h6' => 'H6',
+      ],
+      'default_value' => 'h2',
+    ])
+    ->addText('heading_text', [
+      'label' => 'Heading Text',
+      'default_value' => 'Why Choose Us?', // Default text for the heading
+    ])
+    ->addRepeater('steps', [
+      'label' => 'Steps',
+      'min' => 1,
+      'layout' => 'block',
+    ])
+    ->addImage('step_image', [
+      'label' => 'Step Image',
+      'return_format' => 'id',
+    ])
+    ->addText('step_title', [
+      'label' => 'Step Title',
+    ])
+    ->addWysiwyg('step_description', [
+      'label' => 'Step Description',
+      'rows' => 4,
+    ])
+    ->endRepeater()
+    // Add the content block layout for the "Why Choose Us 02" section
+    ->addLayout('services_007', [
+      'label' => 'Why Choose Us 02',
+    ])
+    // Heading Section
+    ->addSelect('heading_tag', [
+      'label' => 'Heading Tag',
+      'choices' => [
+        'h1' => 'H1',
+        'h2' => 'H2',
+        'h3' => 'H3',
+        'h4' => 'H4',
+        'h5' => 'H5',
+        'h6' => 'H6',
+      ],
+      'default_value' => 'h2',
+    ])
+    ->addText('heading_text', [
+      'label' => 'Heading Text',
+      'default_value' => 'Why choose House 2 Home to manage your Deep Retrofit?',
+    ])
+    // Repeater for the articles
+    ->addRepeater('articles', [
+      'label' => 'Articles',
+      'min' => 1,
+      'layout' => 'block',
+    ])
+    ->addImage('article_image', [
+      'label' => 'Article Image',
+      'return_format' => 'id',
+    ])
+    ->addText('article_title', [
+      'label' => 'Article Title',
+    ])
+    ->addWysiwyg('article_description', [
+      'label' => 'Article Description',
+      'rows' => 3,
+    ])
+    ->addColorPicker('background_color', [
+      'label' => 'Background Color',
+      'default_value' => '#F59E0B', // Default to a color like yellow-400
+    ])
+    ->addColorPicker('text_color', [
+      'label' => 'Text Color',
+      'default_value' => '#000000', // Default to black
+    ])
+    ->endRepeater()
+    ->addLayout('services_008', [
+      'label' => 'Why Choose Us 03',
+    ])
+    ->addSelect('heading_tag', [
+      'label' => 'Heading Tag',
+      'choices' => [
+        'h1' => 'H1',
+        'h2' => 'H2',
+        'h3' => 'H3',
+        'h4' => 'H4',
+        'h5' => 'H5',
+        'h6' => 'H6',
+      ],
+      'default_value' => 'h2',
+    ])
+    ->addText('heading_text', [
+      'label' => 'Heading Text',
+      'default_value' => 'Why Work With Us?',
+    ])
+    ->addRepeater('content_blocks', [
+      'label' => 'Content Blocks',
+      'layout' => 'block',
+    ])
+    ->addImage('block_image', [
+      'label' => 'Block Image',
+      'return_format' => 'id',
+    ])
+    ->addText('block_title', [
+      'label' => 'Block Title',
+    ])
+    ->addWysiwyg('block_text', [
+      'label' => 'Block Text',
+      'rows' => 4,
+    ])
+    ->addColorPicker('block_bg_color', [
+      'label' => 'Block Background Color',
+      'default_value' => '#F3F4F6', // Neutral background color by default
+    ])
+    ->endRepeater()
+
+    ->addLayout('history_001', [
+      'label' => 'History 01',
+    ])
+    ->addSelect('heading_tag', [
+      'label' => 'Heading Tag',
+      'choices' => [
+        'h1' => 'H1',
+        'h2' => 'H2',
+        'h3' => 'H3',
+        'h4' => 'H4',
+        'h5' => 'H5',
+        'h6' => 'H6',
+      ],
+      'default_value' => 'h2',
+    ])
+    ->addText('heading_text', [
+      'label' => 'Heading Text',
+      'default_value' => 'Our History In Words',
+    ])
+    ->addRepeater('history_items', [
+      'label' => 'History Items',
+      'min' => 1,
+      'layout' => 'block',
+    ])
+    ->addImage('item_image', [
+      'label' => 'Item Image',
+      'return_format' => 'id',
+    ])
+    ->addText('item_year', [
+      'label' => 'Item Year',
+    ])
+    ->addText('item_title', [
+      'label' => 'Item Title',
+    ])
+    ->addWysiwyg('item_description', [
+      'label' => 'Item Description',
+      'rows' => 4,
+    ])
+    ->addColorPicker('item_background_color', [
+      'label' => 'Item Background Color',
+      'default_value' => '#FFFFFF',
+    ])
+    ->endRepeater()
+
+    ->addLayout('team_001', [
+      'label' => 'Team 01',
+    ])
+    ->addSelect('heading_tag', [
+      'label' => 'Heading Tag',
+      'choices' => [
+        'h1' => 'H1',
+        'h2' => 'H2',
+        'h3' => 'H3',
+        'h4' => 'H4',
+        'h5' => 'H5',
+        'h6' => 'H6',
+      ],
+      'default_value' => 'h2',
+    ])
+    ->addText('heading_text', [
+      'label' => 'Heading Text',
+      'default_value' => 'Meet Our Team',
+    ])
+    ->addRepeater('team_members', [
+      'label' => 'Team Members',
+      'min' => 1,
+      'layout' => 'block',
+    ])
+    ->addPostObject('team_member', [
+      'label' => 'Team Member',
+      'post_type' => ['teams'],
+      'return_format' => 'object',
+    ])
+    ->endRepeater()
+    ->addLayout('case_studies_001', [
+      'label' => 'Case Studies',
+    ])
+    ->addSelect('heading_tag', [
+      'label' => 'Heading Tag',
+      'choices' => [
+        'h1' => 'H1',
+        'h2' => 'H2',
+        'h3' => 'H3',
+        'h4' => 'H4',
+        'h5' => 'H5',
+        'h6' => 'H6',
+      ],
+      'default_value' => 'h2',
+    ])
+    ->addText('heading_text', [
+      'label' => 'Heading Text',
+      'default_value' => 'Case Studies',
+    ])
+    ->addColorPicker('section_bg_color', [
+      'label' => 'Section Background Color',
+      'default_value' => '#FFFFFF',
+    ])
+    ->addLayout('careers_001', [
+      'label' => 'Career 01',
+    ])
+    ->addSelect('heading_tag', [
+      'label' => 'Heading Tag',
+      'choices' => [
+        'h1' => 'H1',
+        'h2' => 'H2',
+        'h3' => 'H3',
+        'h4' => 'H4',
+        'h5' => 'H5',
+        'h6' => 'H6',
+      ],
+      'default_value' => 'h2',
+    ])
+    ->addText('heading_text', [
+      'label' => 'Heading Text',
+      'default_value' => 'Job Openings',
+    ])
+    ->addColorPicker('section_bg_color', [
+      'label' => 'Section Background Color',
+      'default_value' => '#F3F4F6', // Neutral background color by default
+    ])
+
+
+
+
+
+  // Register the field group
+  acf_add_local_field_group($flexible_content->build());
+}

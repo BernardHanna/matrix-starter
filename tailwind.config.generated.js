@@ -52,7 +52,7 @@ module.exports = {
     "darkMode": "class",
     "safelist": [
         "text-[#123456]",
-        "bg-green-700",
+        "bg-primary",
         "text-green-700",
         "hover:text-green-700",
         "focus:text-green-700",

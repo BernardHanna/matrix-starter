@@ -1,3 +1,5 @@
+const plugin = require('tailwindcss/plugin');
+
 module.exports = {
   mode: 'jit',
   content: [
@@ -18,7 +20,7 @@ module.exports = {
           dark: '#c54f06',
         },
         secondary: {
-          DEFAULT: '#32325d',
+          DEFAULT: '#1e1f3d',
           light: '#1e1f3d',
           dark: '#4e4f7e',
         },
@@ -45,17 +47,18 @@ module.exports = {
           orange: '#FDCC05',
         },
         text: {
-          primary: '#1A202C',
-          secondary: '#4A5568',
-          accent: '#F6AD55',  
+          primary: '#000000',
+          secondary: '#ffffff',
+          accent: '#F6AD55',
         },
       },
       fontSize: {
         base: '16px',
       },
       width: {
-        'container' : '1440px',
-      },  
+        'container-md': '1084px',
+        'container': '1440px',
+      },
       maxWidth: {
         'container': '1440px',
         'xxs': '320px',
@@ -75,13 +78,8 @@ module.exports = {
         'custom-lg': '16px',
         'custom-xl': '40px',
         'custom-full': '100%',
-        'btn' : '0px',
+        'btn': '0px',
       },
-    },
-    pseudo: {
-      'before': 'before',
-      'after': 'after',
-      'not-first': 'not(:first-child)',
     },
     screens: {
       xxs: '320px',
@@ -107,7 +105,7 @@ module.exports = {
         xl: '1280px',
         xxl: '1440px',
         ultrawide: '1920px',
-      }
+      },
     },
   },
   variants: {
@@ -124,7 +122,7 @@ module.exports = {
     }),
   ],
   safelist: [
-    // Layout utilities
+    // Static width classes
     'absolute',
     'relative',
     'top-0',
@@ -134,9 +132,38 @@ module.exports = {
     'inset-0',
     'max-w-[745px]',
     'fit-content',
-
+    'w-1/2',
+    'w-1/3',
+    'w-2/3',
+    'w-1/4',
+    'w-2/4',
+    'w-3/4',
+    'w-1/5',
+    'w-2/5',
+    'w-3/5',
+    'w-4/5',
+    'w-1/6',
+    'w-2/6',
+    'w-3/6',
+    'w-4/6',
+    'w-5/6',
+    'w-1/12',
+    'w-2/12',
+    'w-3/12',
+    'w-4/12',
+    'w-5/12',
+    'w-6/12',
+    'w-7/12',
+    'w-8/12',
+    'w-9/12',
+    'w-10/12',
+    'w-11/12',
+    'w-full',
     // Container classes
     'container',
+    'container-md',
+    'max-w-container',
+    'max-w-container-md',
     'max-w-xxs',
     'max-w-xs',
     'max-w-mob',
@@ -146,5 +173,31 @@ module.exports = {
     'max-w-xl',
     'max-w-xxl',
     'max-w-ultrawide',
+    // Width classes
+    ...Array.from({ length: 100 }, (_, i) => `w-[${i + 1}%]`),
+    ...Array.from({ length: 100 }, (_, i) => `xs:w-[${i + 1}%]`),
+    ...Array.from({ length: 100 }, (_, i) => `mobs:w-[${i + 1}%]`),
+    ...Array.from({ length: 100 }, (_, i) => `sm:w-[${i + 1}%]`),
+    ...Array.from({ length: 100 }, (_, i) => `md:w-[${i + 1}%]`),
+    ...Array.from({ length: 100 }, (_, i) => `lg:w-[${i + 1}%]`),
+    ...Array.from({ length: 100 }, (_, i) => `xl:w-[${i + 1}%]`),
+    ...Array.from({ length: 100 }, (_, i) => `xxl:w-[${i + 1}%]`),
+    ...Array.from({ length: 100 }, (_, i) => `ultrawide:w-[${i + 1}%]`),
+    ...Array.from({ length: 100 }, (_, i) => `md:w-[${i + 1}%]`),
+    // Dynamic gap classes
+    ...Array.from({ length: 101 }, (_, i) => `gap-[${i}px]`),
+    ...Array.from({ length: 101 }, (_, i) => `sm:gap-[${i}px]`),
+    ...Array.from({ length: 101 }, (_, i) => `md:gap-[${i}px]`),
+    ...Array.from({ length: 101 }, (_, i) => `lg:gap-[${i}px]`),
+    // Dynamic padding-y classes
+    ...Array.from({ length: 101 }, (_, i) => `py-[${i + 1}%]`),
+    ...Array.from({ length: 101 }, (_, i) => `xs:py-[${i + 1}%]`),
+    ...Array.from({ length: 101 }, (_, i) => `mobs:py-[${i + 1}%]`),
+    ...Array.from({ length: 101 }, (_, i) => `sm:py-[${i + 1}%]`),
+    ...Array.from({ length: 101 }, (_, i) => `md:py-[${i + 1}%]`),
+    ...Array.from({ length: 101 }, (_, i) => `lg:py-[${i + 1}%]`),
+    ...Array.from({ length: 101 }, (_, i) => `xl:py-[${i + 1}%]`),
+    ...Array.from({ length: 101 }, (_, i) => `xxl:py-[${i + 1}%]`),
+    ...Array.from({ length: 101 }, (_, i) => `ultrawide:py-[${i + 1}%]`),
   ],
-}
+};

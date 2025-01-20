@@ -3,9 +3,9 @@ get_header();
 ?>
 
 <main class="site-main">
-	<?php get_template_part('template-parts/header/subpage-header'); ?>
+    <?php get_template_part('template-parts/header/subpage-header'); ?>
     <?php get_template_part('template-parts/header/breadcrumbs'); ?>
-    <div class="max-w-[1440px] m-auto max-desktop:px-8">
+    <div class="max-w-container m-auto max-desktop:px-8">
         <div class="grid grid-cols-1 gap-10 mt-16 md:grid-cols-2 max-md:mt-10">
             <?php if (have_posts()): ?>
                 <?php while (have_posts()): the_post(); ?>
@@ -19,7 +19,7 @@ get_header();
                                 <div class="mt-4 bg-orange-500 border-orange-500 border-solid border-[3px] min-h-[3px] w-[66px]" aria-hidden="true"></div>
                                 <div class="mt-4 text-lg leading-7"><?php the_excerpt(); ?></div>
                             </div>
-                            <button class="px-12 mt-4 text-base font-semibold text-white uppercase bg-green-700 min-h-[60px] w-full lg:w-[370px] mx-auto flex items-center justify-center max-md:px-5 border-2 border-[#0D783D] hover:bg-transparent hover:text-[#0D783D]">
+                            <button class="px-12 mt-4 text-base font-semibold text-white uppercase bg-primary min-h-[60px] w-full lg:w-[370px] mx-auto flex items-center justify-center max-md:px-5 border-2 border-[#0D783D] hover:bg-transparent hover:text-[#0D783D]">
                                 Read more
                             </button>
                         </div>
@@ -30,35 +30,36 @@ get_header();
             <?php endif; ?>
         </div>
 
-		<div class="flex items-center justify-center w-full mt-10 mb-10 pagination">
-			<?php
-			// Custom pagination function to highlight the current page link and add spacing
-			function custom_paginate_links($template) {
-				// Add the 'current' class to the active page
-				$template = str_replace("page-numbers current", "page-numbers current text-orange-500 font-bold", $template);
+        <div class="flex items-center justify-center w-full mt-10 mb-10 pagination">
+            <?php
+            // Custom pagination function to highlight the current page link and add spacing
+            function custom_paginate_links($template)
+            {
+                // Add the 'current' class to the active page
+                $template = str_replace("page-numbers current", "page-numbers current text-orange-500 font-bold", $template);
 
-				// Add spacing between page numbers
-				$template = str_replace("page-numbers", "page-numbers mx-2", $template);
+                // Add spacing between page numbers
+                $template = str_replace("page-numbers", "page-numbers mx-2", $template);
 
-				return $template;
-			}
+                return $template;
+            }
 
-			// Add filter to modify paginate_links output
-			add_filter('paginate_links_output', 'custom_paginate_links');
+            // Add filter to modify paginate_links output
+            add_filter('paginate_links_output', 'custom_paginate_links');
 
-			// Output the pagination
-			echo paginate_links(array(
-				'total' => $wp_query->max_num_pages,
-				'current' => max(1, get_query_var('paged')),
-				'mid_size' => 1,
-				'prev_text' => __('&laquo; Prev', 'text-domain'),
-				'next_text' => __('Next &raquo;', 'text-domain'),
-			));
+            // Output the pagination
+            echo paginate_links(array(
+                'total' => $wp_query->max_num_pages,
+                'current' => max(1, get_query_var('paged')),
+                'mid_size' => 1,
+                'prev_text' => __('&laquo; Prev', 'text-domain'),
+                'next_text' => __('Next &raquo;', 'text-domain'),
+            ));
 
-			// Remove the filter to avoid affecting other pagination instances
-			remove_filter('paginate_links_output', 'custom_paginate_links');
-			?>
-		</div>
+            // Remove the filter to avoid affecting other pagination instances
+            remove_filter('paginate_links_output', 'custom_paginate_links');
+            ?>
+        </div>
 
 
     </div>

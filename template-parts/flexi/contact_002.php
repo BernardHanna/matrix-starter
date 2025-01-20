@@ -8,7 +8,7 @@ $iframe_code = get_sub_field('iframe_code');
 ?>
 
 <section class="flex flex-col items-center py-8 text-black xl:py-20" style="background-color: <?php echo esc_attr($section_bg_color); ?>;">
-    <div class="max-w-[1440px] m-auto px-4 lg:px-8 xxl:px-0 w-full">
+    <div class="max-w-container m-auto px-4 lg:px-8 xxl:px-0 w-full">
         <div class="flex flex-col text-3xl font-semibold leading-none">
             <<?php echo esc_html($heading_tag); ?>><?php echo esc_html($heading_text); ?></<?php echo esc_html($heading_tag); ?>>
             <div class="mt-4 bg-orange-500 border-orange-500 border-solid border-[3px] min-h-[3px] w-[66px]"></div>

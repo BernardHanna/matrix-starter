@@ -12,7 +12,7 @@ get_header();
 	<?php get_template_part('template-parts/header/subpage-header'); ?>
     <?php get_template_part('template-parts/header/breadcrumbs'); ?>
     
-    <div class="max-w-[1440px] m-auto max-desktop:px-8">
+    <div class="max-w-container m-auto max-desktop:px-8">
         <div class="grid grid-cols-1 gap-10 mt-16 md:grid-cols-2 max-md:mt-10">
             <?php 
             // Custom query for posts if it's the blog page
@@ -36,7 +36,7 @@ get_header();
                                 <div class="mt-4 bg-orange-500 border-orange-500 border-solid border-[3px] min-h-[3px] w-[66px]" aria-hidden="true"></div>
                                 <div class="mt-4 text-base leading-7"><?php the_excerpt(); ?></div>
                             </div>
-                            <button class="px-12 mt-4 text-base font-semibold text-white uppercase bg-green-700 min-h-[60px] w-full lg:w-[370px] mx-auto flex items-center justify-center max-md:px-5 border-2 border-[#0D783D] hover:bg-transparent hover:text-[#0D783D]">
+                            <button class="px-12 mt-4 text-base font-semibold text-white uppercase bg-primary min-h-[60px] w-full lg:w-[370px] mx-auto flex items-center justify-center max-md:px-5 border-2 border-[#0D783D] hover:bg-transparent hover:text-[#0D783D]">
                                 Read more
                             </button>
                         </div>

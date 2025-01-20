@@ -24,7 +24,7 @@ $hamburger_style = get_field('hamburger_style', 'option');
   x-effect="isOpen ? document.body.style.overflow = 'hidden' : document.body.style.overflow = ''">
 
   <div :class="{ 'fixed-header': isSticky }" class="flex flex-wrap items-center justify-between w-full m-auto bg-white max-xxl:px-8">
-    <div class="max-w-[1440px] mx-auto w-full flex flex-row justify-between items-center">
+    <div class="max-w-container mx-auto w-full flex flex-row justify-between items-center">
       <a href="<?php echo esc_url(home_url('/')); ?>" class="flex flex-col items-start justify-center my-auto">
         <?php if ($logo_url) : ?>
           <img src="<?php echo esc_url($logo_url); ?>" alt="<?php echo esc_attr($logo_alt); ?>" class="object-contain max-w-full aspect-[2.33] w-[168px]" />

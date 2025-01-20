@@ -38,7 +38,7 @@ $hero_width = get_sub_field('hero_width') ?: 'xl:max-w-[745px]';
 if ($hero_image || $hero_title || $hero_description || $hero_primary_button || $hero_secondary_button):
 ?>
   <section class="bg-top bg-cover md:block" style="background-image: url('<?php echo esc_url($hero_image); ?>');">
-    <div class="container max-w-[1440px] max-xxl:px-8 mx-auto">
+    <div class="container mx-auto max-w-container max-xxl:px-8">
       <div class="py-28">
         <div class="w-full lg:w-[612px] bg-primary p-8">
           <?php if ($hero_title): ?>

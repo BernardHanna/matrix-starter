@@ -4,7 +4,7 @@ $heading_text = get_sub_field('heading_text');
 $history_items = get_sub_field('history_items');
 ?>
 <section class="flex flex-col items-center justify-center py-8 text-black lg:py-20 bg-yellow-50">
-    <div class="max-w-[1440px] m-auto px-4 lg:px-8 xxl:px-0">
+    <div class="max-w-container m-auto px-4 lg:px-8 xxl:px-0">
         <div class="flex flex-col text-3xl font-semibold leading-none">
             <<?php echo esc_html($heading_tag); ?>><?php echo esc_html($heading_text); ?></<?php echo esc_html($heading_tag); ?>>
             <div class="mt-4 bg-orange-500 border-orange-500 border-solid border-[3px] min-h-[3px] w-[66px]"></div>

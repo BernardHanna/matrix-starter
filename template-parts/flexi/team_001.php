@@ -4,7 +4,7 @@ $heading_text = get_sub_field('heading_text');
 $team_members = get_sub_field('team_members');
 ?>
 <section class="flex flex-col items-center justify-center py-8 lg:py-20 text-black bg-[#E7E7E7] max-desktop:px-8">
-    <div class="max-w-[1440px] m-auto">
+    <div class="max-w-container m-auto">
         <div class="flex flex-col text-3xl font-semibold leading-none">
             <<?php echo esc_html($heading_tag); ?>><?php echo esc_html($heading_text); ?></<?php echo esc_html($heading_tag); ?>>
             <div class="mt-4 bg-orange-500 border-orange-500 border-solid border-[3px] min-h-[3px] w-[66px]" aria-hidden="true"></div>
@@ -31,7 +31,7 @@ $team_members = get_sub_field('team_members');
                             <p class="mt-2 text-lg leading-loose"><?php echo wp_kses_post($team_content); ?></p>
                             <?php if ($team_categories && !is_wp_error($team_categories)): ?>
                                 <div class="mt-4 text-sm text-gray-600">
-                                    
+
                                     <ul class="flex flex-wrap justify-center space-x-2">
                                         <?php foreach ($team_categories as $category): ?>
                                             <li><span class="px-2 py-1 rounded"><?php echo esc_html($category->name); ?></span></li>

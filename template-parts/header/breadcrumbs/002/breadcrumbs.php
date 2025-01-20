@@ -1,7 +1,7 @@
         <nav
           class="flex flex-col items-center self-stretch justify-center px-6 py-5 text-lg font-bold leading-loose text-white bg-gray-700 border-b border-solid border-b-neutral-200"
           aria-label="Breadcrumb">
-          <div class="flex flex-col items-start max-w-full w-[1440px]">
+          <div class="flex flex-col items-start max-w-full w-container">
             <ol class="flex flex-wrap items-start gap-4 max-md:max-w-full">
               <!-- Home link -->
               <li>

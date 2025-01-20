@@ -57,7 +57,7 @@
   ?>
 
    <section class="bg-top bg-cover md:block" style="background-image: url('<?php echo esc_url($hero_image); ?>')" class="<?php echo esc_attr($hero_height); ?>">
-     <div class="container max-w-[1440px]  max-xxl:px-8 mx-auto">
+     <div class="container max-w-container  max-xxl:px-8 mx-auto">
        <div class="py-28">
          <div class="w-full lg:w-[612px] bg-[#0D783D] p-8">
            <?php if ($hero_title): ?>

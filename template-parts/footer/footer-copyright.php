@@ -1,5 +1,5 @@
 <section class="flex flex-col items-center self-stretch justify-center py-5 text-lg leading-loose bg-white">
-  <div class="flex flex-col-reverse md:flex-row gap-10 justify-between items-center max-w-full w-[1440px] max-sm:px-6 max-desktop:px-8">
+  <div class="flex flex-col-reverse md:flex-row gap-10 justify-between items-center max-w-full w-container max-sm:px-6 max-desktop:px-8">
     <span class="self-stretch my-auto text-black max-md:max-w-full">
       &copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?>.
       <?php echo __('All rights reserved.', 'matrix-starter'); ?>

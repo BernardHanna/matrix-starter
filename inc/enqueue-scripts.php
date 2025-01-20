@@ -109,14 +109,5 @@ function matrix_starter_enqueue_scripts()
     [],
     $theme_version
   );
-
-  // Enqueue main JavaScript file
-  wp_enqueue_script(
-    'matrix-starter-scripts',
-    get_template_directory_uri() . '/dist/styles.js',
-    [], // Add dependencies if needed, e.g., ['jquery', 'slick-js', 'flowbite']
-    null,
-    true
-  );
 }
 add_action('wp_enqueue_scripts', 'matrix_starter_enqueue_scripts');

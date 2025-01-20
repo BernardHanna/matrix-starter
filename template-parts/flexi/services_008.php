@@ -4,7 +4,7 @@ $heading_text = get_sub_field('heading_text');
 $content_blocks = get_sub_field('content_blocks');
 ?>
 <section class="flex flex-col items-center self-stretch justify-center px-4 py-8 bg-white lg:py-20 lg:px-8 xxl:px-0">
-    <div class="max-w-[1440px] m-auto">
+    <div class="max-w-container m-auto">
         <div class="flex flex-col text-3xl font-semibold leading-none">
             <<?php echo esc_html($heading_tag); ?>><?php echo esc_html($heading_text); ?></<?php echo esc_html($heading_tag); ?>>
             <div class="mt-4 bg-orange-500 border-orange-500 border-solid border-[3px] min-h-[3px] w-[66px]"></div>

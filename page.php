@@ -10,7 +10,7 @@ get_header();
     if (have_posts()) :
         while (have_posts()) : the_post();
             if (trim(get_the_content()) != '') : ?>
-                <div class="max-w-[1440px] px-4 mx-auto">
+                <div class="max-w-container px-4 mx-auto">
                     <?php
                     get_template_part('template-parts/content/content', 'page');
                     ?>

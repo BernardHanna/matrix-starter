@@ -10,7 +10,7 @@ $section_bg_color = get_sub_field('section_bg_color') ?: '#FFFFFF';
 ?>
 
 <section class="flex flex-col items-center py-8 lg:py-20" style="background-color: <?php echo esc_attr($section_bg_color); ?>;">
-    <div class="max-w-[1440px] m-auto px-4 lg:px-8 xxl:px-0">
+    <div class="max-w-container m-auto px-4 lg:px-8 xxl:px-0">
         <div class="flex flex-col text-3xl font-semibold leading-none">
             <<?php echo esc_html($heading_tag); ?>><?php echo esc_html($heading_text); ?></<?php echo esc_html($heading_tag); ?>>
             <div class="mt-4 bg-orange-500 border-orange-500 border-solid border-[3px] min-h-[3px] w-[66px]" aria-hidden="true"></div>
@@ -28,12 +28,13 @@ $section_bg_color = get_sub_field('section_bg_color') ?: '#FFFFFF';
                                 <div class="mt-4 bg-orange-500 border-orange-500 border-solid border-[3px] min-h-[3px] w-[66px]" aria-hidden="true"></div>
                                 <div class="mt-4 text-lg leading-7"><?php the_excerpt(); ?></div>
                             </div>
-                            <button class="px-12 mt-4 text-base font-semibold text-white uppercase bg-green-700 min-h-[60px] w-full lg:w-[370px] mx-auto flex items-center justify-center max-md:px-5 border-2 border-[#0D783D] hover:bg-transparent hover:text-[#0D783D]">
+                            <button class="px-12 mt-4 text-base font-semibold text-white uppercase bg-primary min-h-[60px] w-full lg:w-[370px] mx-auto flex items-center justify-center max-md:px-5 border-2 border-[#0D783D] hover:bg-transparent hover:text-[#0D783D]">
                                 Read more
                             </button>
                         </div>
                     </a>
-                <?php endwhile; wp_reset_postdata(); ?>
+                <?php endwhile;
+                wp_reset_postdata(); ?>
             <?php endif; ?>
         </div>
     </div>
