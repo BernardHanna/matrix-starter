@@ -34,15 +34,10 @@ use Log1x\Navi\Navi;
 
 $navigation = Navi::make()->build('primary');
 ?>
+
 <section
   x-data="{
-    isSticky: false,
-    hasScrolled: false,
-    offset: 200, // Scroll offset for sticking
-    checkScroll() {
-      this.hasScrolled = window.pageYOffset > 0;
-      this.isSticky = window.pageYOffset > this.offset;
-    },
+    isOpen: false,
     checkWindowSize() {
       if (window.innerWidth > 768) {
         this.isOpen = false;
@@ -50,20 +45,14 @@ $navigation = Navi::make()->build('primary');
     }
   }"
   x-init="
-    window.addEventListener('scroll', () => checkScroll());
+    window.addEventListener('scroll', () => { isSticky = window.pageYOffset > 100 });
     window.addEventListener('resize', () => checkWindowSize());
   "
-  class="relative z-50 transition-all duration-500 ease-in-out bg-primary"
-  :class="{ 'shadow-lg': hasScrolled }"
+  class="relative z-50 py-8 transition-all duration-300 bg-primary"
   x-effect="isOpen ? document.body.style.overflow = 'hidden' : document.body.style.overflow = ''">
-  <div
-    :class="{ 
-      'fixed top-0 left-0 w-full transform translate-y-0 opacity-100': isSticky, 
-      'relative': !isSticky 
-    }"
-    class="flex flex-wrap items-center justify-between w-full m-auto transition-transform duration-500 ease-in-out bg-white max-xxl:px-8">
+
+  <div class="flex flex-wrap items-center justify-between w-full m-auto bg-white max-xxl:px-8">
     <div class="flex flex-row items-center justify-between w-full mx-auto max-w-container">
-      <!-- Logo -->
       <a href="<?php echo esc_url(home_url('/')); ?>" class="flex flex-col items-start justify-center my-auto">
         <?php if ($logo_url) : ?>
           <img src="<?php echo esc_url($logo_url); ?>" alt="<?php echo esc_attr($logo_alt); ?>" class="object-contain max-w-full aspect-[2.33] w-[168px]" />
@@ -72,13 +61,12 @@ $navigation = Navi::make()->build('primary');
         <?php endif; ?>
       </a>
 
-      <!-- Desktop Navigation -->
-      <div class="flex-wrap items-center hidden gap-10 text-base font-semibold text-black uppercase xl:flex">
+      <div class="flex-wrap items-center hidden h-full gap-10 text-base font-semibold text-black uppercase xl:flex">
         <?php if ($navigation->isNotEmpty()) : ?>
           <nav id="site-navigation">
             <ul id="primary-menu" class="flex space-x-12">
               <?php foreach ($navigation->toArray() as $item) : ?>
-                <li class="relative group <?php echo esc_attr($item->classes); ?> <?php echo $item->active ? 'current-item' : ''; ?>">
+                <li class="relative group <?php echo esc_attr($item->classes); ?> <?php echo $item->active ? 'current-item' : ''; ?> ">
                   <a href="<?php echo esc_url($item->url); ?>" class="gap-2.5 self-stretch my-auto whitespace-nowrap <?php echo $item->active ? 'active-item' : ''; ?>">
                     <?php echo esc_html($item->label); ?>
                   </a>
@@ -100,7 +88,6 @@ $navigation = Navi::make()->build('primary');
         <?php endif; ?>
       </div>
 
-      <!-- Hamburger Menu Button -->
       <?php if ($enable_hamburger): ?>
         <button
           :class="{ 'is-active z-50': isOpen }"
@@ -114,14 +101,15 @@ $navigation = Navi::make()->build('primary');
           </span>
         </button>
       <?php endif; ?>
+
     </div>
   </div>
 
-  <!-- Mobile Navigation Menu -->
   <?php if ($enable_hamburger && $navigation->isNotEmpty()): ?>
     <div
       x-show="isOpen"
-      class="absolute top-0 left-0 z-40 w-full h-screen transition-transform duration-500 ease-out bg-white"
+      :class="{ '<?php echo esc_attr($transition_class); ?>': !isOpen, 'translate-x-0 translate-y-0': isOpen }"
+      class="absolute top-0 left-0 z-40 h-screen <?php echo esc_attr($transition_class); ?> bg-white transition-transform duration-500 ease-out"
       style="background-color: <?php echo esc_attr($mobile_menu_bg); ?>; <?php echo esc_attr($menu_width_style); ?>"
       x-transition:enter="transition ease-out duration-500"
       x-transition:leave="transition ease-in duration-300"

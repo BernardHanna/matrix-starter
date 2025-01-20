@@ -42,6 +42,7 @@ add_action('acf/init', function () {
         ->addTab('subpage_hero', ['placement' => 'left'])
         ->addTab('blog', ['placement' => 'left'])
         ->addTab('contact_information', ['placement' => 'left'])
+    ->addFields(require __DIR__ . '/theme-options/contact_information.php')
         ->addTab('footer', ['placement' => 'left'])
         ->addTab('copyright', ['placement' => 'left'])
         ->addTab('404', ['placement' => 'left'])
