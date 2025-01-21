@@ -8,7 +8,7 @@ $contact_info
   ->addRepeater('social_links', [
     'label'        => 'Social Media Links',
     'instructions' => 'Add links to your social media accounts.',
-    'min'          => 1,
+  'min'          => 0,
     'layout'       => 'block',
   ])
   ->addText('label', [
@@ -19,7 +19,7 @@ $contact_info
   ->addUrl('url', [
     'label'        => 'URL',
     'instructions' => 'Provide the URL for the social media account.',
-    'required'     => 1,
+  'required'     => 0,
   ])
   ->addSelect('icon', [
     'label'       => 'Icon',

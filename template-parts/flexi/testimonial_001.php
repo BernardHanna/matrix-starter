@@ -12,20 +12,20 @@ $is_slider = count($testimonials) > 1;
   role="region"
   aria-label="Customer Testimonial"
   style="background-color: <?php echo esc_attr($background_color); ?>;">
-  <div id="<?php echo esc_attr($slider_id); ?>" class="flex flex-col w-full mx-auto max-w-[1180px] pt-24 pb-24 <?php echo $is_slider ? 'slick-slider flex-col' : 'lg:flex-row'; ?>">
+  <div id="<?php echo esc_attr($slider_id); ?>" class="flex flex-col w-full mx-auto max-w-[1180px] max-lg:py-12 lg:pt-24 lg:pb-24 <?php echo $is_slider ? 'slick-slider flex-col' : 'lg:flex-row'; ?>">
     <?php if ($testimonials): ?>
       <?php foreach ($testimonials as $testimonial): ?>
-        <div class="flex flex-row w-full slick-item">
-          <div class="relative flex flex-col justify-start w-1/2">
-            <div class="flex flex-row w-full">
+        <div class="flex flex-col w-full md:flex-row slick-item max-md:items-center max-md:px-5">
+          <div class="relative flex flex-col justify-start w-full md:w-1/2">
+            <div class="flex flex-col w-full md:flex-row max-md:mb-12">
               <?php if ($testimonial['show_svg']): ?>
-                <div class="absolute left-[-114px] -top-[1.6rem]">
+                <div class="relative md:absolute left-0 md:left-[-114px] md:-top-[1.6rem]">
                   <svg xmlns="http://www.w3.org/2000/svg" class="w-[107px] h-[66px]" viewBox="0 0 107 66" fill="none">
                     <path d="M38.9091 66H0L28.3931 0H53.8943L38.9091 66ZM92.0147 66H53.1056L81.4988 0H107L92.0147 66Z" fill="#013643" />
                   </svg>
                 </div>
               <?php endif; ?>
-              <div class="flex flex-col pr-8">
+              <div class="flex flex-col md:pr-8">
                 <blockquote
                   class="z-0 text-3xl font-semibold leading-10 text-cyan-950 max-md:max-w-full">
                   <?php echo wp_kses_post($testimonial['quote']); ?>
@@ -36,7 +36,7 @@ $is_slider = count($testimonials) > 1;
               </div>
             </div>
           </div>
-          <div class="relative flex flex-col justify-center w-1/2 mx-auto">
+          <div class="relative flex flex-col justify-center w-full mx-auto md:w-1/2">
             <img
               loading="lazy"
               src="<?php echo esc_url($testimonial['author_image']['url'] ?? get_template_directory_uri() . '/assets/images/placeholder.png'); ?>"

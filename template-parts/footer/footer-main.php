@@ -2,15 +2,15 @@
   <nav class="flex flex-wrap items-center justify-between w-full gap-24 px-16 py-8 max-md:gap-10 max-md:px-10 max-sm:gap-8 max-sm:px-5 max-sm:py-6" aria-label="Primary footer navigation">
     <!-- WordPress Menu -->
     <?php if (has_nav_menu('footer')) : ?>
-      <ul class="flex flex-wrap gap-8 items-center text-base text-white min-w-[240px] max-md:gap-6 max-sm:gap-4 max-sm:text-sm" role="list">
+      <ul class="flex flex-wrap gap-8 items-center text-base text-white min-w-[240px] max-md:gap-6 max-sm:gap-4 max-sm:text-sm text-white" role="list">
         <?php
         wp_nav_menu([
           'theme_location' => 'footer',
           'container'      => false,
           'items_wrap'     => '%3$s', // Remove ul wrapper
           'depth'          => 1,
-          'link_before'    => '',
-          'link_after'     => '',
+          'link_before'    => '<span class="text-white">',
+          'link_after'     => '</span>',
         ]);
         ?>
       </ul>
@@ -24,7 +24,7 @@
         foreach ($social_links as $social) :
           if ($social['url'] && $social['icon']) : ?>
             <a href="<?php echo esc_url($social['url']); ?>" class="focus:outline-none focus:ring-2 focus:ring-white" aria-label="Visit our <?php echo esc_attr($social['label']); ?>" target="_blank" rel="noopener noreferrer">
-              <i class="fa <?php echo esc_attr($social['icon']); ?> text-2xl text-white transition-opacity cursor-pointer duration-[0.2s] hover:opacity-80"></i>
+              <i class="fab <?php echo esc_attr($social['icon']); ?> text-2xl text-white transition-opacity cursor-pointer duration-[0.2s] hover:opacity-80"></i>
             </a>
       <?php endif;
         endforeach;
