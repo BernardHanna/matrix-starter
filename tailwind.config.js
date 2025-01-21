@@ -201,5 +201,7 @@ module.exports = {
     ...Array.from({ length: 101 }, (_, i) => `xl:py-[${i + 1}%]`),
     ...Array.from({ length: 101 }, (_, i) => `xxl:py-[${i + 1}%]`),
     ...Array.from({ length: 101 }, (_, i) => `ultrawide:py-[${i + 1}%]`),
+    // Dynamic rounded classes
+    ...Array.from({ length: 101 }, (_, i) => `rounded-[${i}px]`),
   ],
 };

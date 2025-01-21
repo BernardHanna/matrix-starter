@@ -124,7 +124,7 @@ blockquote.right {
 
 /* Tailwind classes for Slick's structure */
 .slick-slider {
-  @apply relative flex;
+  @apply relative block;
 }
 
 .slick-initialized .slick-slide {
@@ -149,11 +149,6 @@ blockquote.right {
 
 .slick-track {
   @apply  relative flex gap-4; /* Adjust the gap between slides */
-}
-
-.slick-slide {
-  @apply flex items-center justify-center; /* Ensure content stays centered */
-  outline: none; /* Remove unwanted focus outlines */
 }
 
 .slick-prev,
@@ -184,4 +179,8 @@ blockquote.right {
 
 .slick-dots li {
   list-style: none;
+}
+
+.slick-active button {
+  @apply bg-primary; /* Active state using Tailwind's primary color */
 }

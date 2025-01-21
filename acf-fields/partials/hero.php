@@ -23,6 +23,8 @@ if (function_exists('acf_add_local_field_group')) {
 
     $hero_content
         ->setLocation('post_type', '==', 'page') // Apply to 'page' post type
+    ->or('page_template', '==', 'front-page.php') // Specifically apply to front page template
+    ->or('page_type', '==', 'front') // Apply to front page (when set as homepage in WP settings)
         // ->and('page_template', '!=', 'front-page.php') Example of not including
         ->addFlexibleContent('hero_content_blocks', [
             'label' => 'Hero Blocks',
