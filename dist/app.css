@@ -753,9 +753,6 @@ video {
 .-mt-\[115px\] {
   margin-top: -115px;
 }
-.-mt-\[8rem\] {
-  margin-top: -8rem;
-}
 .mb-0 {
   margin-bottom: 0px;
 }
@@ -988,6 +985,9 @@ video {
 .h-\[48px\] {
   height: 48px;
 }
+.h-\[4px\] {
+  height: 4px;
+}
 .h-\[525px\] {
   height: 525px;
 }
@@ -1188,6 +1188,9 @@ video {
 }
 .w-7\/12 {
   width: 58.333333%;
+}
+.w-8 {
+  width: 2rem;
 }
 .w-8\/12 {
   width: 66.666667%;
@@ -1558,14 +1561,23 @@ video {
 .max-w-7xl {
   max-width: 80rem;
 }
+.max-w-\[1084px\] {
+  max-width: 1084px;
+}
 .max-w-\[1180px\] {
   max-width: 1180px;
 }
 .max-w-\[252px\] {
   max-width: 252px;
 }
+.max-w-\[32px\] {
+  max-width: 32px;
+}
 .max-w-\[400px\] {
   max-width: 400px;
+}
+.max-w-\[599px\] {
+  max-width: 599px;
 }
 .max-w-\[745px\] {
   max-width: 745px;
@@ -2605,8 +2617,7 @@ video {
   border-color: rgb(249 115 22 / var(--tw-border-opacity));
 }
 .border-primary {
-  --tw-border-opacity: 1;
-  border-color: rgb(251 100 7 / var(--tw-border-opacity));
+  border-color: ##F68D2E;
 }
 .border-transparent {
   border-color: transparent;
@@ -2779,8 +2790,7 @@ video {
   background-color: rgb(249 115 22 / var(--tw-bg-opacity));
 }
 .bg-primary {
-  --tw-bg-opacity: 1;
-  background-color: rgb(251 100 7 / var(--tw-bg-opacity));
+  background-color: ##F68D2E;
 }
 .bg-purple-700 {
   --tw-bg-opacity: 1;
@@ -2792,7 +2802,7 @@ video {
 }
 .bg-secondary {
   --tw-bg-opacity: 1;
-  background-color: rgb(30 31 61 / var(--tw-bg-opacity));
+  background-color: rgb(2 90 112 / var(--tw-bg-opacity));
 }
 .bg-secondary-dark {
   --tw-bg-opacity: 1;
@@ -3757,6 +3767,10 @@ video {
   --tw-text-opacity: 1;
   color: rgb(82 82 82 / var(--tw-text-opacity));
 }
+.text-neutral-900 {
+  --tw-text-opacity: 1;
+  color: rgb(23 23 23 / var(--tw-text-opacity));
+}
 .text-orange-500 {
   --tw-text-opacity: 1;
   color: rgb(249 115 22 / var(--tw-text-opacity));
@@ -4008,6 +4022,9 @@ video {
   --tw-ring-opacity: 1;
   --tw-ring-color: rgb(229 231 235 / var(--tw-ring-opacity));
 }
+.focus\:ring-primary:focus {
+  --tw-ring-color: ##F68D2E;
+}
 .focus\:ring-purple-300:focus {
   --tw-ring-opacity: 1;
   --tw-ring-color: rgb(216 180 254 / var(--tw-ring-opacity));
@@ -4015,6 +4032,9 @@ video {
 .focus\:ring-white:focus {
   --tw-ring-opacity: 1;
   --tw-ring-color: rgb(255 255 255 / var(--tw-ring-opacity));
+}
+.focus\:ring-offset-2:focus {
+  --tw-ring-offset-width: 2px;
 }
 .group:hover .group-hover\:block {
   display: block;
@@ -4144,6 +4164,10 @@ video {
 
   .max-md\:pb-24 {
     padding-bottom: 6rem;
+  }
+
+  .max-md\:pb-4 {
+    padding-bottom: 1rem;
   }
 
   .max-md\:text-4xl {
@@ -6781,6 +6805,10 @@ video {
     width: 40%;
   }
 
+  .md\:w-\[408px\] {
+    width: 408px;
+  }
+
   .md\:w-\[41\%\] {
     width: 41%;
   }
@@ -8074,6 +8102,10 @@ video {
     order: 2;
   }
 
+  .lg\:-mt-\[8rem\] {
+    margin-top: -8rem;
+  }
+
   .lg\:mb-0 {
     margin-bottom: 0px;
   }
@@ -8546,6 +8578,10 @@ video {
     justify-content: center;
   }
 
+  .lg\:justify-between {
+    justify-content: space-between;
+  }
+
   .lg\:gap-\[0px\] {
     gap: 0px;
   }
@@ -8977,6 +9013,11 @@ video {
   .lg\:px-24 {
     padding-left: 6rem;
     padding-right: 6rem;
+  }
+
+  .lg\:px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 
   .lg\:px-5 {
@@ -12462,7 +12503,6 @@ a {
 a:hover {
   --tw-text-opacity: 1;
   color: rgb(29 78 216 / var(--tw-text-opacity));
-  text-decoration-line: underline;
 }
 
 /* Forms */
@@ -12711,7 +12751,7 @@ blockquote.right {
 
 .slick-dots li.slick-active button {
   --tw-bg-opacity: 1;
-  background-color: rgb(30 31 61 / var(--tw-bg-opacity)); /* Active state using Tailwind's secondary color */
+  background-color: rgb(2 90 112 / var(--tw-bg-opacity)); /* Active state using Tailwind's secondary color */
 }
 
 .slick-dots li {
@@ -12719,6 +12759,5 @@ blockquote.right {
 }
 
 .slick-active button {
-  --tw-bg-opacity: 1;
-  background-color: rgb(251 100 7 / var(--tw-bg-opacity)); /* Active state using Tailwind's primary color */
+  background-color: ##F68D2E; /* Active state using Tailwind's primary color */
 }

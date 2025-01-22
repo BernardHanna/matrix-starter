@@ -52,7 +52,7 @@ li {
 
 /* Links */
 a {
-  @apply text-blue-500 hover:underline hover:text-blue-700;
+  @apply text-blue-500 hover:text-blue-700;
 }
 
 /* Forms */

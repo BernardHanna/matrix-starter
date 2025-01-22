@@ -15,12 +15,12 @@ module.exports = {
       },
       colors: {
         primary: {
-          DEFAULT: '#fb6407',
-          light: '#ff8539',
+          DEFAULT: '##F68D2E',
+          light: '#025A70',
           dark: '#c54f06',
         },
         secondary: {
-          DEFAULT: '#1e1f3d',
+          DEFAULT: '#025A70',
           light: '#1e1f3d',
           dark: '#4e4f7e',
         },
@@ -47,7 +47,7 @@ module.exports = {
           orange: '#FDCC05',
         },
         text: {
-          primary: '#000000',
+          primary: '#1D2939',
           secondary: '#ffffff',
           accent: '#F6AD55',
         },
@@ -201,6 +201,33 @@ module.exports = {
     ...Array.from({ length: 101 }, (_, i) => `xl:py-[${i + 1}%]`),
     ...Array.from({ length: 101 }, (_, i) => `xxl:py-[${i + 1}%]`),
     ...Array.from({ length: 101 }, (_, i) => `ultrawide:py-[${i + 1}%]`),
+    // Dynamic padding-top and padding-bottom classes
+    ...Array.from({ length: 101 }, (_, i) => `pt-[${i + 1}%]`),
+    ...Array.from({ length: 101 }, (_, i) => `pb-[${i + 1}%]`),
+    //`xs
+    ...Array.from({ length: 101 }, (_, i) => `xs:pt-[${i + 1}%]`),
+    ...Array.from({ length: 101 }, (_, i) => `xs:pb-[${i + 1}%]`),
+    //mobs
+    ...Array.from({ length: 101 }, (_, i) => `mobs:pt-[${i + 1}%]`),
+    ...Array.from({ length: 101 }, (_, i) => `mobs:pb-[${i + 1}%]`),
+    //sm
+    ...Array.from({ length: 101 }, (_, i) => `sm:pt-[${i + 1}%]`),
+    ...Array.from({ length: 101 }, (_, i) => `sm:pb-[${i + 1}%]`),
+    //md
+    ...Array.from({ length: 101 }, (_, i) => `md:pt-[${i + 1}%]`),
+    ...Array.from({ length: 101 }, (_, i) => `md:pb-[${i + 1}%]`),
+    //lg
+    ...Array.from({ length: 101 }, (_, i) => `lg:pt-[${i + 1}%]`),
+    ...Array.from({ length: 101 }, (_, i) => `lg:pb-[${i + 1}%]`),
+    //xl
+    ...Array.from({ length: 101 }, (_, i) => `xl:pt-[${i + 1}%]`),
+    ...Array.from({ length: 101 }, (_, i) => `xl:pb-[${i + 1}%]`),
+    //xxl
+    ...Array.from({ length: 101 }, (_, i) => `xxl:pt-[${i + 1}%]`),
+    ...Array.from({ length: 101 }, (_, i) => `xxl:pb-[${i + 1}%]`),
+    //ultrawide
+    ...Array.from({ length: 101 }, (_, i) => `ultrawide:pt-[${i + 1}%]`),
+    ...Array.from({ length: 101 }, (_, i) => `ultrawide:pb-[${i + 1}%]`),
     // Dynamic rounded classes
     ...Array.from({ length: 101 }, (_, i) => `rounded-[${i}px]`),
   ],

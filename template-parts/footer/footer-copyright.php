@@ -1,5 +1,5 @@
 <div class="flex w-full border-t border-solid border-t-white">
-  <nav class="flex flex-wrap items-center justify-between w-full gap-24 px-16 py-4 mx-auto text-sm leading-none text-white max-w-container max-md:gap-10 max-md:px-10 max-sm:gap-8 max-sm:px-5 max-sm:py-6" aria-label="Secondary footer navigation">
+  <nav class="flex flex-col items-start justify-between w-full gap-24 px-16 py-4 mx-auto text-sm leading-none text-white md:flex-row md:items-center max-w-container max-md:gap-10 max-md:px-10 max-sm:gap-8 max-sm:px-5 max-sm:py-6" aria-label="Secondary footer navigation">
     <?php
     // Output the WordPress menu
     wp_nav_menu([

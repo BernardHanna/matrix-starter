@@ -2,7 +2,7 @@
   <nav class="flex flex-wrap items-center justify-between w-full gap-24 px-16 py-8 max-md:gap-10 max-md:px-10 max-sm:gap-8 max-sm:px-5 max-sm:py-6" aria-label="Primary footer navigation">
     <!-- WordPress Menu -->
     <?php if (has_nav_menu('footer')) : ?>
-      <ul class="flex flex-wrap gap-8 items-center text-base text-white min-w-[240px] max-md:gap-6 max-sm:gap-4 max-sm:text-sm text-white" role="list">
+      <ul class="flex flex-row items-center gap-8 text-base text-white max-md:items-start max-md:flex-col max-sm: max-md:gap-6 max-sm:gap-4 max-sm:text-sm" role="list">
         <?php
         wp_nav_menu([
           'theme_location' => 'footer',
@@ -17,7 +17,7 @@
     <?php endif; ?>
 
     <!-- Social Media Links -->
-    <div class="flex items-center gap-4 max-sm:justify-center max-sm:w-full" role="list" aria-label="Social media links">
+    <div class="flex items-start gap-4 md:items-center max-sm:justify-center max-sm:w-full" role="list" aria-label="Social media links">
       <?php
       $social_links = get_field('social_links', 'option'); // Retrieve social links from ACF
       if ($social_links) :
